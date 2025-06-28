@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: KotlinSpringLive
+  r2dbc:
+    url: r2dbc:postgresql://192.168.0.153:5432/postgres
+    username: root
+    password: Aa123456
+    pool:
+      enabled: true
+      max-idle-time: 30m
