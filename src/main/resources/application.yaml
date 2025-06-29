@@ -8,3 +8,11 @@ spring:
     pool:
       enabled: true
       max-idle-time: 30m
+  data:
+    redis:
+      host: 192.168.0.153
+      port: 6379
+      database: 0
+  jackson:
+    serialization:
+      write-null-map-values: false

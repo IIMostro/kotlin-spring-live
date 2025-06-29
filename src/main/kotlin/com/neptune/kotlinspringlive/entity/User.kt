@@ -2,8 +2,8 @@ package com.neptune.kotlinspringlive.entity
 
 import org.springframework.data.annotation.Id
 import org.springframework.data.relational.core.mapping.Table
+import java.io.Serializable
 import java.time.Instant
-import java.util.Date
 
 @Table("users")
 data class User(
@@ -16,4 +16,4 @@ data class User(
     val createdAt: Instant? = null,
     val updatedAt: Instant? = null,
     val lastLoginAt: Instant? = null,
-)
+): Serializable
